@@ -23,6 +23,9 @@ fun main(args: Array<String>) {
         else -> println(name_null)
     }
 
+    val greetingToPrint = if(name_null != null) nameR else "oh no"
+
+    println("greetingToPrint = $greetingToPrint")
     // Try adding program arguments via Run/Debug configuration.
     // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
 //    println("Program arguments: ${args.joinToString()}")
