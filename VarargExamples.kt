@@ -6,8 +6,8 @@ fun sayHellotoVararg(greeting: String, vararg thingsToGreet: String){
 
 fun multipleParametersNoSignature(firstParameter: String, secondParameter: Int){
     println("first parameter = ($firstParameter), and second parameter = ($secondParameter)")
-
 }
+
 class VarargExamples {
 }
 
