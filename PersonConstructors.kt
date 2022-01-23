@@ -11,6 +11,12 @@ class PersonConstructors(val firstName: String, val age: Int) {
 
     }
 
+    fun printInfo(){
+//        val nickNameToPrint = if(nickName != null) nickName else "no nickName"
+        val nickNameToPrint = nickName ?: "no nickName"
+        println("name $firstName age $age and nickname $nickNameToPrint")
+    }
+
 
 }
 
@@ -25,6 +31,8 @@ fun main(){
     josephine.nickName = "cool person"
 
     println("new nickname = " + josephine.nickName)
+
+    josephine.printInfo()
 
 
 
