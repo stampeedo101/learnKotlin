@@ -1,3 +1,7 @@
+//a function that return a String and have a String parameter
+fun saySomething(something: String): String{
+    return something;
+}
 fun main(args: Array<String>) {
 
     //val is final
@@ -18,6 +22,7 @@ fun main(args: Array<String>) {
 
     name_null = "void"
 
+    //FUNCTIONAL PROGRAM
     when(name_null){
         null -> println("null")
         else -> println(name_null)
@@ -26,6 +31,10 @@ fun main(args: Array<String>) {
     val greetingToPrint = if(name_null != null) nameR else "oh no"
 
     println("greetingToPrint = $greetingToPrint")
+
+    println("a text from a function with parameter (thing) = \"" + saySomething("thing" + "\""))
+
+    //FUNCTIONAL PROGRAM
     // Try adding program arguments via Run/Debug configuration.
     // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
 //    println("Program arguments: ${args.joinToString()}")
