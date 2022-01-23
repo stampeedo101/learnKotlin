@@ -2,6 +2,11 @@
 fun saySomething(something: String): String{
     return something;
 }
+
+fun sayLotThins(something: String,anotherThing: String,andAnother: String): String{
+    return "something = $something, \nanotherThing = $anotherThing, \nandAnother = $andAnother "
+}
+
 fun main(args: Array<String>) {
 
     //val is final
@@ -33,6 +38,8 @@ fun main(args: Array<String>) {
     println("greetingToPrint = $greetingToPrint")
 
     println("a text from a function with parameter (thing) = \"" + saySomething("thing" + "\""))
+
+    println(sayLotThins("one", "two","three"))
 
     //FUNCTIONAL PROGRAM
     // Try adding program arguments via Run/Debug configuration.
