@@ -7,6 +7,13 @@ fun sayLotThins(something: String,anotherThing: String,andAnother: String): Stri
     return "something = $something, \nanotherThing = $anotherThing, \nandAnother = $andAnother "
 }
 
+fun sayThingToListOfThings(somethingTosay: String, listOfThings: List<String>){
+    listOfThings.forEach{ listOfThing ->
+        println("$somethingTosay say to $listOfThing")
+    }
+
+}
+
 fun main(args: Array<String>) {
 
     //val is final
@@ -59,14 +66,14 @@ fun main(args: Array<String>) {
 
     }
 
-    //for lists
+    //for lists not mutable
     val listOfThings = listOf("one list", "two list", "three list")
 
     listOfThings.forEach {
         println("for each listOfThings = " + it)
     }
 
-    //for maps
+    //for maps not mutable
     val mapOfThings = mapOf(1 to "a", 3 to "c", 5 to "e")
 
     println("in maps we have:")
@@ -84,6 +91,17 @@ fun main(args: Array<String>) {
         println("key = $key and value = $value")
 
     }
+
+    //mutable lists and maps
+
+    val listOfThingsMutable = mutableListOf("one list", "two list", "three list")
+    listOfThingsMutable.add("four list")
+    val mapOfThingsMutable = mutableMapOf(1 to "a", 3 to "c", 5 to "e")
+    mapOfThingsMutable.put(6,"f")
+
+    println()
+
+    sayThingToListOfThings("(it is hot)", listOfThingsMutable)
 
 
 
