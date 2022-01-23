@@ -41,6 +41,15 @@ fun main(args: Array<String>) {
 
     println(sayLotThins("one", "two","three"))
 
+    //arrays in Kotlin
+
+    val arrayOfThings = arrayOf("chair","door","guitar")
+
+    println(arrayOfThings.size)
+    println(arrayOfThings.get(0))
+    println(arrayOfThings.get(1))
+    println(arrayOfThings.get(2))
+
     //FUNCTIONAL PROGRAM
     // Try adding program arguments via Run/Debug configuration.
     // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
