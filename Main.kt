@@ -59,6 +59,32 @@ fun main(args: Array<String>) {
 
     }
 
+    //for lists
+    val listOfThings = listOf("one list", "two list", "three list")
+
+    listOfThings.forEach {
+        println("for each listOfThings = " + it)
+    }
+
+    //for maps
+    val mapOfThings = mapOf(1 to "a", 3 to "c", 5 to "e")
+
+    println("in maps we have:")
+
+    mapOfThings.forEach{ key, value ->
+        println("key = $key and value = $value")
+
+    }
+
+    val mapTest = mapOf("bla" to true,"ble" to false, "bli" to true)
+
+    println("in another maps we have:")
+
+    mapTest.forEach{ key, value ->
+        println("key = $key and value = $value")
+
+    }
+
 
 
     //FUNCTIONAL PROGRAM
